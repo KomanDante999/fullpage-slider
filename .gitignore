@@ -1,0 +1,25 @@
+.DS_Store
+node_modules
+/**/node_modules/
+/.git/
+/**/Thumbs.db
+/**/*.DS_Store
+/**/package-lock.json
+/**/*debug.log
+/dist
+/log
+.publish
+
+# local env files
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+

@@ -1,0 +1,17 @@
+.footer {
+	@extend %size100;
+	display: flex;
+	align-items: center;
+
+	&__share-link {}
+
+	&__active-bar {
+		width: fit-content;
+		height: 100%
+	}
+
+	&__control {
+		@extend %size100;
+	}
+
+}

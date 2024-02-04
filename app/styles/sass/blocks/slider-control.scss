@@ -1,0 +1,70 @@
+.slider-control {
+	display: grid;
+	grid-template-columns: calc(var(--sizePagination)*5 + var(--paginationGap)*10) 1fr var(--sizeNavigation) var(--sizeNavigation);
+	grid-gap: var(--indentDecor);
+	@extend %size100;
+	padding: 0 var(--indentDecor);
+
+	@media (max-width: $DesktopMD) {
+		grid-template-columns: var(--sizeNavigation) 1fr var(--sizeNavigation);
+		grid-gap: calc(var(--indentDecor)*2);
+		padding: 0 calc(var(--indentDecor)*2);
+	}
+
+	@media (max-width: $MobilLG) {
+		grid-template-columns: 1fr var(--sizeNavigation) var(--sizeNavigation) 1fr;
+		grid-gap: calc(var(--indentDecor)*4);
+		padding: 0;
+	}
+
+	&__pagination {
+		@extend %flexCenter;
+		height: 100%;
+
+		@media (max-width: $DesktopMD) {
+			display: none;
+		}
+	}
+
+	&__scrollbar {
+		height: 100%;
+		@extend %flexCenter;
+		padding: 0 calc(var(--indentDecor)*3);
+
+		@media (max-width: $DesktopLG) {
+			padding: 0;
+		}
+
+		@media (max-width: $DesktopMD) {
+			order: 2;
+		}
+
+		@media (max-width: $MobilLG) {
+			display: none;
+		}
+	}
+
+	&__navigation-prev {
+		@extend %flexCenter;
+
+		@media (max-width: $DesktopMD) {
+			order: 1;
+		}
+
+		@media (max-width: $MobilLG) {
+			grid-column-start: 2;
+		}
+	}
+
+	&__navigation-next {
+		@extend %flexCenter;
+
+		@media (max-width: $DesktopMD) {
+			order: 3;
+		}
+
+		@media (max-width: $MobilLG) {
+			grid-column-start: 3;
+		}
+	}
+}

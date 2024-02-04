@@ -1,0 +1,38 @@
+.aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	@extend %size100;
+	background-color: rgba($color: $colorDark, $alpha: 0.9);
+
+	@media (max-width: $DesktopSM) {
+		flex-direction: row;
+		justify-content: flex-start;
+		height: 100%;
+		background-color: transparent;
+	}
+
+	&__decor {
+		width: 37px;
+		height: 60px;
+
+		@media (max-width: $DesktopSM) {
+			display: none;
+		}
+
+		&_img {
+			@extend %size100;
+			stroke: rgba($color: $colorDecor, $alpha: $colorDecorOpacity);
+		}
+	}
+
+	&__social-bar {
+		margin-bottom: calc(var(--indentDecor) * 4);
+
+		@media (max-width: $DesktopSM) {
+			margin-bottom: 0;
+		}
+	}
+
+}

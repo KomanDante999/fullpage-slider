@@ -1,0 +1,154 @@
+// GENERAL PROJECT STYLES
+
+// USER VARIABLES SECTION
+$colorAccent: #F57500;
+$colorDark: #303030;
+$colorDeep: #252525;
+$colorGray1: #3c3c3c;
+$colorText: #FFFFFF;
+$colorDecor: #fff;
+$colorBlur: rgba(#fff, .1);
+$colorDecorOpacity: .4;
+$colorDecorOpacityLight: .8;
+$colorOverlay: rgba(#000, .35);
+$fontSize: 13px;
+$lineHeight: 1.7;
+$fontMain: 'Raleway', sans-serif; // User Font Family
+$fontSystem: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$opacityText: .5;
+$durationButton: 500ms;
+$sizeMain: 75px;
+$indentDecor: 15px;
+$indexSocIcon: 1.5;
+// Swiper
+$sizePagination: 24px;
+$sizePaginationScale: 0.4;
+$paginationGap: 4px;
+$scrollLineHeight: 2px;
+$scrollDragHeight: 6px;
+// Media
+$DesktopLG: 1360px;
+$DesktopMD: 1200px;
+$DesktopSM: 964px;
+$TabletLG: 800px;
+$TabletMD: 750px;
+$TabletSM: 635px;
+$MobilLG: 535px;
+$MobilMD: 480px;
+$MobilSM: 320px;
+
+:root {
+	--sizeMain: 75px;
+	--indentDecor: 15px;
+	--indexSocIcon: 1.75;
+	--fontSize: 10px;
+	// Swiper
+	--sizeNavigation: 32px;
+	--sizeNavigationArrow: 10px;
+	--sizePagination: 24px;
+	--sizePaginationScale: 0.4;
+	--paginationGap: 4px;
+	--scrollLineHeight: 2px;
+	--scrollDragHeight: 6px;
+}
+
+@media (max-width: $DesktopMD) {
+	:root {
+		--sizeMain: 60px;
+		--indentDecor: 10px;
+		--indexSocIcon: 1.5;
+		--fontSize: 8px;
+		--navigationGap: 0;
+	}
+}
+
+@media (max-width: $TabletSM) {
+	:root {
+		--sizeMain: 50px;
+		--indentDecor: 7px;
+		--indexSocIcon: 1.5;
+		--fontSize: 7px;
+	}
+}
+
+@media (max-width: $MobilMD) {
+	:root {
+		--sizeMain: 40px;
+		--indentDecor: 5px;
+		--indexSocIcon: 1.5;
+		--fontSize: 6px;
+	}
+}
+
+
+@mixin transitBase($property) {
+	transition-property: $property;
+	transition-duration: $durationButton;
+	transition-timing-function: ease-out;
+}
+
+%flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%flexBetween {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+%size100 {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+// GENERAL CSS SETTINGS
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $colorAccent;
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+
+	&:focus:required:invalid {
+		border-color: red;
+	}
+
+	&:required:valid {
+		border-color: green
+	}
+}
+
+html {
+	font-size: var(--fontSize);
+}
+
+body {
+	font-family: $fontMain;
+	line-height: $lineHeight;
+	color: $colorText;
+	min-width: 320px;
+	position: relative;
+}
+
+body,
+html {
+	height: 100%;
+	background-color: $colorDark;
+	overflow: hidden;
+}
+
+.main {
+	@extend %size100;
+	padding-top: var(--sizeMain);
+}

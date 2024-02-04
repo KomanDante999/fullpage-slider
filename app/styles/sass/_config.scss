@@ -1,0 +1,49 @@
+// 100 Thin (Hairline) 
+// 200 Extra Light (Ultra Light) 
+// 300 Light 
+// 400 Normal Regular 
+// 500 Medium 
+// 600 Semi Bold (Demi Bold) 
+// 700 Bold 
+// 800 Extra Bold (Ultra Bold) 
+// 900 Black (Heavy)
+
+
+
+// Bootstrap compatible gutter variable => $gutter
+// $grid-gutter-width: 30px;
+// $gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import '_normalize.v8.0.1';
+@import '_my-reset';
+@import 'node_modules/swiper/swiper-bundle';
+@import '_general';
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+// FONTS LOAD SECTION
+@mixin font($name, $postfix, $style, $weight) {
+	@font-face {
+		font-family: $name;
+		font-style: $style;
+		font-weight: $weight;
+		font-display: swap;
+		src:
+			local($name + ' ' + $postfix),
+			local($name + '-' + $postfix),
+			url('..fonts/' + $name + '-' + $postfix + '.woff2') format('woff2'),
+			url('..fonts/' + $name + '-' + $postfix + '.woff') format('woff');
+	}
+}
+
+@include font('Oswald', 'Bold', normal, 700);
+@include font('Oswald', 'Medium', normal, 500);
+@include font('Raleway', 'Bold', normal, 700);
+@include font('Raleway', 'Medium', normal, 500);
+@include font('Raleway', 'Regular', normal, 400);
+@include font('Raleway', 'SemiBold', normal, 600);
+@include font('Roboto', 'Medium', normal, 500);

@@ -1,0 +1,74 @@
+.form-feedback {
+	display: flex;
+	flex-direction: column;
+
+	&__container {
+		padding: calc(var(--indentDecor)*2) calc(var(--indentDecor)*3);
+		background-color: $colorOverlay;
+
+	}
+
+	&__header {
+		@extend %flexCenter;
+		// padding: calc(var(--indentDecor)) calc(var(--indentDecor)*.5);
+	}
+
+	&__title {
+		font-family: 'Oswald';
+		font-weight: 400;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	&__decor-line {
+		// width: 100%;
+		// margin-left: calc(var(--indentDecor)*-2);
+		// margin-right: calc(var(--indentDecor)*-2);
+		height: 4px;
+		background-color: $colorBlur;
+		border-width: 0;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		// padding: calc(var(--indentDecor)*2) calc(var(--indentDecor)*.5);
+	}
+
+	&__input {
+		min-width: 280px;
+		padding: 12px 18px;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: .1em;
+		color: $colorText;
+		background-color: $colorGray1;
+		border: 1px solid rgba($color: $colorDecor, $alpha: $colorDecorOpacity);
+		@include transitBase(border-color);
+
+		&::-webkit-input-placeholder {
+			color: rgba($color: $colorDecor, $alpha: $colorDecorOpacity);
+			letter-spacing: .05em;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: var(--indentDecor);
+		}
+
+		&:focus {
+			border-color: $colorAccent;
+		}
+	}
+
+	&__input_area {}
+
+	&__footer {
+		display: flex;
+		justify-content: center;
+		// padding: var(--indentDecor) calc(var(--indentDecor)*.5);
+		// padding-top: calc(var(--indentDecor)*2);
+	}
+
+	&__buton {}
+}

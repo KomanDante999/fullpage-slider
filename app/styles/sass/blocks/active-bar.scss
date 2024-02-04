@@ -1,0 +1,56 @@
+.active-bar {
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	&__item {
+		height: 100%;
+
+		&:not(:last-child) {
+			width: calc(var(--sizeMain) + 1px);
+			border-right: 1px solid rgba($color: $colorDecor, $alpha: $colorDecorOpacity);
+		}
+
+		&:last-child {
+			width: calc(var(--sizeMain) + 3px);
+			border-right: 3px solid $colorAccent;
+		}
+	}
+
+	&__link {
+		@extend %size100;
+		@extend %flexCenter;
+		@include transitBase(background-color);
+		background-color: $colorOverlay;
+
+		&:focus {
+			background-color: rgba($color: $colorAccent, $alpha: $colorDecorOpacity);
+		}
+
+		.hasHover &:hover {
+			background-color: rgba($color: $colorAccent, $alpha: $colorDecorOpacity);
+		}
+	}
+
+	&__img {
+		&_vk {
+			width: calc(12px * var(--indexSocIcon));
+			height: calc(10.67px * var(--indexSocIcon));
+		}
+
+		&_inst {
+			width: calc(12px * var(--indexSocIcon));
+			height: calc(13px * var(--indexSocIcon));
+		}
+
+		&_face {
+			width: calc(7.5px * var(--indexSocIcon));
+			height: calc(12px * var(--indexSocIcon));
+		}
+
+		&_twit {
+			width: calc(12px * var(--indexSocIcon));
+			height: calc(12px * var(--indexSocIcon));
+		}
+	}
+}

@@ -1,0 +1,25 @@
+	.share-link {
+		flex: 0 0 var(--sizeMain);
+		width: var(--sizeMain);
+		height: var(--sizeMain);
+		background-color: $colorAccent;
+
+		&_link {
+			@extend %flexCenter;
+			@extend %size100;
+			@include transitBase(background-color);
+
+			&:focus {
+				background-color: $colorGray1;
+			}
+
+			.hasHover &:hover {
+				background-color: $colorGray1;
+			}
+		}
+
+		&_img {
+			width: calc(12px * var(--indexSocIcon));
+			height: calc(12px * var(--indexSocIcon));
+		}
+	}

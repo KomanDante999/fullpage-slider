@@ -1,0 +1,26 @@
+.slider-img {
+	position: relative;
+	@extend %size100;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@extend %size100;
+		background-color: $colorOverlay;
+	}
+
+	&__slide {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	&__bg {
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+}
