@@ -10,7 +10,8 @@
 	],
 	"license": "ISC",
 	"scripts": {
-		"start": "gulp"
+		"start": "gulp",
+		"build": "gulp build"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.5",
@@ -53,6 +54,6 @@
 		"swiper": "^11.0.5"
 	},
 	"env": {
-		"GITHUB_REPOSITORY": "https://github.com/KomanDante999/creative-portfolio.git"
+		"GITHUB_REPOSITORY": "https://github.com/KomanDante999/fullpage-slider.git"
 	}
 }

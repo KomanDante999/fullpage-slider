@@ -173,11 +173,10 @@ function deploy() {
 		}))
 }
 
-function deployGHPages() {
-	return src(`dist/`)
+function deployghp() {
+	return src('dist/*/**')
 		.pipe(ghPages())
 }
-exports.deployghp = deployGHPages
 
 function startwatch() {
 	watch([`app/styles/${preprocessor}/**/*`], { usePolling: true }, styles)
@@ -190,7 +189,8 @@ export {
 	scripts,
 	styles,
 	images,
-	deploy
+	deploy,
+	deployghp
 }
 export let assets = series(scripts, styles, images)
 export let build = series(
