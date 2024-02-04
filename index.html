@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>
+		fullpage-slider
+	</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="images/dist/favicon.svg">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="preload" href="fonts/Oswald-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Raleway-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="css/app.min.css">
+	<script defer src="js/app.min.js"></script>
+</head>
+
+<body>
+	<div class="cursor cursor-hidden" id="cursor"></div>
+	<header class="header">
+	<div class="top-line">
+		<div href="" class="top-line__logo">
+			<a href="#" class="logo cursor-target">
+				<span class="logo__img-container">
+					<img class="logo__img" src="images/dist/svg/logo.svg" alt="логотип компании Вездеход">
+				</span>
+				<span class="logo__text">ВЕЗДЕХОД</span>
+			</a>
+		</div>
+		<div class="top-line__decor"></div>
+		<div class="top-line__contacts contacts">
+			<div class="contacts__phone">
+				<span class="contacts__phone_title">ТЕЛЕФОН: </span>
+				<a href="#" class="contacts__phone_number cursor-target">555-777-666</a>
+			</div>
+			<div class="contacts__separator"></div>
+			<div class="contacts__adress">
+				<span>АДРЕС: </span>
+				<span class="contacts__adress_value">УЛ. МОСКОВСКАЯ,45</span>
+			</div>
+		</div>
+		<div class="top-line__decor"></div>
+		<div class="top-line__menu">
+			<button class="menu__button-start burger-button cursor-target">
+				<img class="burger-button__img" src="images/dist/svg/bars-solid.svg" alt="открыть меню">
+			</button>
+		</div>
+	</div>
+</header>
+	<main class="main">
+		<div class="slider-container">
+	<div class="slider-container__aside">
+		<aside class="aside">
+	<div class="aside__decor">
+		<img class="aside__decor_img" src="images/dist/svg/decoration.svg" alt="">
+	</div>
+	<div class="aside__social-bar">
+		<div class="social-bar">
+	<a href="#" class="social-bar__link cursor-target">
+		<img class="social-bar__img social-bar__img_vk" src="images/dist/svg/vk-brands.svg" alt="Вконтакте">
+	</a>
+	<a href="#" class="social-bar__link cursor-target">
+		<img class="social-bar__img social-bar__img_inst" src="images/dist/svg/instagram-brands.svg" alt="Инстаграмм">
+	</a>
+	<a href="#" class="social-bar__link cursor-target">
+		<img class="social-bar__img  social-bar__img_face" src="images/dist/svg/facebook-f-brands.svg" alt="фейсбук">
+	</a>
+	<a href="#" class="social-bar__link cursor-target">
+		<img class="social-bar__img   social-bar__img_twit" src="images/dist/svg/twitter-brands.svg" alt="твиттер">
+	</a>
+</div>
+	</div>
+</aside>
+	</div>
+	<div class="slider-container__slider-text">
+		<div class="slider-text">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide slider-text__slide">
+			<div class="slider-text__content">
+				<h2 class="slider-text__title">
+					ВЫБОР ВНЕДОРОЖНИКА <span>НА ЛЮБОЙ</span> СЛУЧАЙ
+				</h2>
+				<p class="slider-text__desc">ВЫБЕРЕМ И ПОДБЕРЕМ ДЛЯ ВАС ЛЮБОЙ ВНЕДОРОЖНИК В КРАТЧАЙШИЕ СРОКИ С УЧЕТОМ ВСЕХ ВАШИХ
+					ПОЖЕЛАНИЙ И ВСЕХ НЕОБХОДИМЫХ ПОТРЕБНОСТЕЙ И</p>
+				<button class="slider-text__buton button button-prim cursor-target" data-custom-open="modal-1">
+					<span class="button-prim__text">ОСТАВИТЬ ЗАЯВКУ</span>
+				</button>
+			</div>
+		</div>
+		<div class="swiper-slide slider-text__slide">
+			<div class="slider-text__content">
+				<h2 class="slider-text__title">
+					<span>Индивидуальный подход</span> к каждому покупателю
+				</h2>
+				<p class="slider-text__desc">Все автомобили мы подбираем индивидуально для каждого клиента или покупателя и с
+					трепетом относимся к реузльтату нашей
+					работы.</p>
+				<button class="slider-text__buton button button-prim cursor-target" data-custom-open="modal-1">
+					<span class="button-prim__text">ОСТАВИТЬ ЗАЯВКУ</span>
+				</button>
+			</div>
+		</div>
+		<div class="swiper-slide slider-text__slide">
+			<div class="slider-text__content">
+				<h2 class="slider-text__title">
+					Выбор <span>лучшей модели</span> из модельного ряда
+				</h2>
+				<p class="slider-text__desc">В нашем модельном ряду имеются модели сотен различных внедорожников, которые
+					удовлетворят даже самого требовательного
+					клиента.</p>
+				<button class="slider-text__buton button button-prim cursor-target" data-custom-open="modal-1">
+					<span class="button-prim__text">ОСТАВИТЬ ЗАЯВКУ</span>
+				</button>
+			</div>
+		</div>
+		<div class="swiper-slide slider-text__slide">
+			<div class="slider-text__content">
+				<h2 class="slider-text__title">
+					ВЫБОР ВНЕДОРОЖНИКА <span>НА ЛЮБОЙ</span> СЛУЧАЙ
+				</h2>
+				<p class="slider-text__desc">ВЫБЕРЕМ И ПОДБЕРЕМ ДЛЯ ВАС ЛЮБОЙ ВНЕДОРОЖНИК В КРАТЧАЙШИЕ СРОКИ С УЧЕТОМ ВСЕХ ВАШИХ
+					ПОЖЕЛАНИЙ И ВСЕХ НЕОБХОДИМЫХ ПОТРЕБНОСТЕЙ И</p>
+				<button class="slider-text__buton button button-prim cursor-target" data-custom-open="modal-1">
+					<span class="button-prim__text">ОСТАВИТЬ ЗАЯВКУ</span>
+				</button>
+			</div>
+		</div>
+		<div class="swiper-slide slider-text__slide">
+			<div class="slider-text__content">
+				<h2 class="slider-text__title">
+					<span>Индивидуальный подход</span> к каждому покупателю
+				</h2>
+				<p class="slider-text__desc">Все автомобили мы подбираем индивидуально для каждого клиента или покупателя и с
+					трепетом относимся к реузльтату нашей
+					работы.</p>
+				<button class="slider-text__buton button button-prim cursor-target" data-custom-open="modal-1">
+					<span class="button-prim__text">ОСТАВИТЬ ЗАЯВКУ</span>
+				</button>
+			</div>
+		</div>
+		<div class="swiper-slide slider-text__slide">
+			<div class="slider-text__content">
+				<h2 class="slider-text__title">
+					Выбор <span>лучшей модели</span> из модельного ряда
+				</h2>
+				<p class="slider-text__desc">В нашем модельном ряду имеются модели сотен различных внедорожников, которые
+					удовлетворят даже самого требовательного
+					клиента.</p>
+				<button class="slider-text__buton button button-prim cursor-target" data-custom-open="modal-1">
+					<span class="button-prim__text">ОСТАВИТЬ ЗАЯВКУ</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="slider-container__slider-img">
+		<div class="slider-img">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide slider-img__slide">
+			<div class="slider-img__bg" data-swiper-parallax="30%"
+				style="background-image: image-set(url(images/dist/slide-images/1.avif), url(images/dist/slide-images/1.webp), url(images/dist/slide-images/1.jpg));">
+			</div>
+		</div>
+		<div class="swiper-slide slider-img__slide">
+			<div class="slider-img__bg" data-swiper-parallax="30%"
+				style="background-image: image-set(url(images/dist/slide-images/2.avif), url(images/dist/slide-images/2.webp), url(images/dist/slide-images/2.jpg));">
+			</div>
+		</div>
+		<div class="swiper-slide slider-img__slide">
+			<div class="slider-img__bg" data-swiper-parallax="30%"
+				style="background-image: image-set(url(images/dist/slide-images/3.avif), url(images/dist/slide-images/3.webp), url(images/dist/slide-images/3.jpg));">
+			</div>
+		</div>
+		<div class="swiper-slide slider-img__slide">
+			<div class="slider-img__bg" data-swiper-parallax="30%"
+				style="background-image: image-set(url(images/dist/slide-images/1.avif), url(images/dist/slide-images/1.webp), url(images/dist/slide-images/1.jpg));">
+			</div>
+		</div>
+		<div class="swiper-slide slider-img__slide">
+			<div class="slider-img__bg" data-swiper-parallax="30%"
+				style="background-image: image-set(url(images/dist/slide-images/2.avif), url(images/dist/slide-images/2.webp), url(images/dist/slide-images/2.jpg));">
+			</div>
+		</div>
+		<div class="swiper-slide slider-img__slide">
+			<div class="slider-img__bg" data-swiper-parallax="30%"
+				style="background-image: image-set(url(images/dist/slide-images/3.avif), url(images/dist/slide-images/3.webp), url(images/dist/slide-images/3.jpg));">
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="slider-container__gear">
+		<div class="slider-container__gear_content">
+			<div class="gear"></div>
+		</div>
+	</div>
+	<div class="slider-container__counter-total">
+		<div class="counter-total">
+	<div class="counter-total__counter">01</div>
+	<div class="counter-total__separator">/</div>
+	<div class="counter-total__total"></div>
+</div>
+	</div>
+	<div class="slider-container__counter">
+		<div class="counter">
+	<div class="counter__counter">02</div>
+	<div class="counter__point">.</div>
+</div>
+	</div>
+	<div class="slider-container__footer">
+		<div class="footer">
+	<div class="footer__share-link">
+		<div class="share-link">
+	<a href="#" class="share-link_link">
+		<img class="share-link_img" src="images/dist/svg/share-solid.svg" alt="">
+	</a>
+</div>
+	</div>
+	<div class="footer__active-bar">
+		<div class="active-bar">
+	<div class="active-bar__item">
+		<a href="#" class="active-bar__link cursor-target">
+			<img class="active-bar__img active-bar__img_vk" src="images/dist/svg/vk-brands.svg" alt="Вконтакте">
+		</a>
+	</div>
+	<div class="active-bar__item">
+		<a href="#" class="active-bar__link cursor-target">
+			<img class="active-bar__img active-bar__img_inst" src="images/dist/svg/instagram-brands.svg" alt="Инстаграмм">
+		</a>
+	</div>
+	<div class="active-bar__item">
+		<a href="#" class="active-bar__link cursor-target">
+			<img class="active-bar__img  active-bar__img_face" src="images/dist/svg/facebook-f-brands.svg" alt="фейсбук">
+		</a>
+	</div>
+	<div class="active-bar__item">
+		<a href="#" class="active-bar__link cursor-target">
+			<img class="active-bar__img   active-bar__img_twit" src="images/dist/svg/twitter-brands.svg" alt="твиттер">
+		</a>
+	</div>
+</div>
+	</div>
+	<div class="footer__control">
+		<div class="slider-control">
+	<div class="slider-control__pagination">
+		<div class="pagination-container">
+	<div class="swiper-pagination cursor-target"></div>
+</div>
+	</div>
+	<div class="slider-control__scrollbar">
+		<div class="scrollbar-contaner">
+	<div class="swiper-scrollbar cursor-target"></div>
+</div>
+	</div>
+
+	<div class="slider-control__navigation-prev">
+		<div class="navigation-container">
+	<div class="swiper-button-prev cursor-target"></div>
+</div>
+	</div>
+	<div class="slider-control__navigation-next">
+		<div class="navigation-container">
+	<div class="swiper-button-next cursor-target"></div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</main>
+
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+	<div class="modal__overlay" tabindex="0" data-custom-close="modal-1">
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<button class="modal__close" aria-label="закрыть окно" data-custom-close="modal-1"></button>
+			<form class="form-feedback" action="#">
+
+	<div class="form-feedback__container">
+		<header class="form-feedback__header">
+			<h2 class="form-feedback__title">
+				Оставить заявку
+			</h2 class="form-feedback__title">
+		</header>
+	</div>
+
+	<hr class="form-feedback__decor-line">
+
+	<div class="form-feedback__container">
+		<main class="form-feedback__main">
+			<input class="form-feedback__input" placeholder="Фамилия" type="text">
+			<input class="form-feedback__input" placeholder="Имя" type="text">
+			<input class="form-feedback__input" placeholder="Телефон" type="tel">
+			<input class="form-feedback__input" placeholder="Email" type="email">
+			<textarea class="form-feedback__input form-feedback__input_area" placeholder="Сообщение" name="" id="" cols="30"
+				rows="3"></textarea>
+		</main>
+	</div>
+
+	<hr class="form-feedback__decor-line">
+
+	<div class="form-feedback__container">
+		<footer class="form-feedback__footer">
+			<button class="form-feedback__buton button button-prim" type="submit">
+				<span class="button-prim__text">ОСТАВИТЬ ЗАЯВКУ</span>
+			</button>
+		</footer>
+	</div>
+
+</form>
+		</div>
+	</div>
+</div>
+</body>
+
+
+</html>
